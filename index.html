@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creaciones Romina</title>
+
+  <!-- Fuente profesional -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    /* HERO */
+    .hero {
+      background-image: url("portada.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.55);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* NAV */
+    nav {
+      background-color: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: #333;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #E1306C;
+    }
+
+    /* SECCIONES */
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    /* SERVICIOS */
+    .servicios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .servicio {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .servicio:hover {
+      transform: translateY(-5px);
+    }
+
+    .servicio img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .servicio h3 {
+      padding: 15px 15px 0;
+    }
+
+    .servicio p {
+      padding: 0 15px 20px;
+      font-size: 14px;
+    }
+
+    /* BOTONES */
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+      margin-right: 10px;
+    }
+
+    .instagram {
+      background-color: #E1306C;
+      color: white;
+    }
+
+    /* CONTACTO */
+    .contacto {
+      text-align: center;
+    }
+
+    .contacto a {
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HERO -->
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Creaciones Romina</h1>
+      <p>Productos artesanales personalizados, hechos a mano y enviados a todo el país</p>
+      <a href="#contacto"><button class="btn-whatsapp">Contactanos</button></a>
+    </div>
+  </header>
+
+  <!-- NAV -->
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- INICIO -->
+
+  <section id="inicio">
+    <h2>Sobre el emprendimiento</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+En Creaciones Romina nos especializamos en productos artesanales hechos a mano,
+pensados para quienes buscan algo único y especial.
+Trabajamos a pedido, cuidando cada detalle, y realizamos envíos a todo el país.
+</p>
+
+  </section>
+
+  <!-- SERVICIOS -->
+
+  <section id="servicios">
+    <h2>Nuestros servicios</h2>
+    <div class="servicios">
+      <div class="servicio">
+        <img src="servicio1.jpg" alt="Servicio 1">
+        <h3>Productos personalizados</h3>
+    <p>Creamos diseños únicos según tu idea, ideales para regalos especiales o uso personal.</p>
+      </div>
+```
+<div class="servicio">
+    <img src="servicio2.jpg" alt="Servicio 2">
+    <h3>Pedidos a medida</h3>
+<p>Elegís colores, detalles y estilo. Nos encargamos de que el resultado sea tal como lo imaginás.</p>
+  </div>
+
+  <div class="servicio">
+    <img src="servicio3.jpg" alt="Servicio 3">
+    <h3>Envíos a todo el país</h3>
+    <p>Realizamos envíos seguros y rápidos para que recibas tu pedido sin complicaciones.</p>
+  </div>
+```
+<div class="servicios">
+      <div class="servicio">
+        <img src="servicio4.jpg" alt="Servicio 4">
+        <h3>Productos personalizados</h3>
+    <p>Creamos diseños únicos según tu idea, ideales para regalos especiales o uso personal.</p>
+      </div>
+</div>
+```
+
+  </section>
+
+  <!-- CONTACTO -->
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <a href="https://wa.me/1157592763" target="_blank">
+      <button class="btn-whatsapp">WhatsApp</button>
+    </a>
+    <a href="https://instagram.com/creaciones_romig" target="_blank">
+      <button class="instagram">Instagram</button>
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 Creaciones Romina · Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
